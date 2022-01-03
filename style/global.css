@@ -35,11 +35,13 @@
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
 
-/*Font size no body nao engloba*/
+/******Font size no body nao engloba******/
+
 body,
 button,
 input,
@@ -94,7 +96,8 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button > img .button > img {
+button > img,
+.button > img {
   margin-right: 1rem;
   width: 2rem;
 }
