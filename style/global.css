@@ -17,9 +17,10 @@
   --icons-details: #a5b0c1;
 
   /* Gray Variables */
-  --gray-dark: #4d5e77;
-  --gray-blue: #a1b2cd;
-  --gray-light: #e5eaf1;
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-light: #e5eaf1;
+  --grey-medium: #eaecf2;
 
   /*Ajuste user agent para 10px já que 1rem = 16px = 100%*/
   font-size: 62.5%;
@@ -107,4 +108,16 @@ button.outlined,
   background: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }

@@ -38,7 +38,7 @@ main h2 {
 }
 
 input {
-  border: 0.2rem solid var(--gray-blue);
+  border: 0.2rem solid var(--grey-blue);
   padding: 0 1.6rem;
 }
 
@@ -59,13 +59,13 @@ button,
 
 .separator div:nth-child(1),
 .separator div:nth-child(3) {
-  background: var(--gray-blue);
+  background: var(--grey-blue);
   width: 100%;
   height: 0.1rem;
 }
 
 .separator div:nth-child(2) {
-  color: var(--gray-blue);
+  color: var(--grey-blue);
   font-family: 'Poopins', sans-serif;
   font-weight: 400;
   padding: 0 1.35rem;
