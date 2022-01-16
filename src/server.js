@@ -9,6 +9,8 @@ server.set('view engine', 'ejs')
 server.use(express.static('public'))
 
 server.set('views', path.join(__dirname, 'views'))
+//midware para poder pegar req.body.pass
+server.use(express.urlencoded({ extended: true }))
 
 server.use(route)
 
