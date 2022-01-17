@@ -11,12 +11,14 @@ module.exports = {
     /*Verificar se senha esta correta */
     const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
 
-    if (verifyRoom.id == roomId) {
+    if (verifyRoom.pass == password) {
       if (action == 'delete') {
         await db.run(`DELETE FROM questions WHERE id = ${questionId}`)
       } else if (action == 'check') {
         await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)
       }
+    } else {
+      res.render('passincorrect', { roomId: roomId })
     }
 
     res.redirect(`/room/${roomId}`)
